@@ -24,3 +24,22 @@ print('Периметр треугольника при этом равен:', s
 S = int(input('Некоторое тело проделало путь:'))
 V = int(input('При этом его скорость составляла:'))
 print('На это потребовалось времени:', int(S/V))
+
+count = 0
+distance = 10000
+first_f_s = 1
+second_f_s = 2
+dog_s = 5
+friend = True
+while distance > 1:
+    if friend is True:
+        time = distance/(second_f_s+dog_s)
+    else:
+        time = distance/(first_f_s+dog_s)
+    distance = distance - time*(first_f_s+second_f_s)
+    count += 1
+    if friend is True:
+        friend = False
+    else:
+        friend = True
+print(count)        
