@@ -1,0 +1,45 @@
+Спасибо господину Инкогнито, что додумался ответвиться, прежде чем добавлять свой мусор в наш репозиторий.
+
+print(1992)
+print('      Мы начинаем!')
+print(5*8)
+print()
+print('Шестью шесть',       6*6,'. Арифметика:',(6+4)*3)
+k = 1+2; s = 2*k; t = 6-s; print(t)
+moscow_settlers=9000000; new_vasyuki_settlers=1000;
+print(moscow_settlers - int(new_vasyuki_settlers))
+a = 10; b = 6; y = a+b+1; print(y+200)
+a = 50; b = 30; l = 20; w =10
+print(l*w,a*b-l*w,2*a+2*b-l-w)
+import math; r = 800; print(round(2*math.pi*r, 2), round(r*r*math.pi, 2))
+t1=3; t2=2; v1=80; v2=90; print((v1*t1+v2*t2)/(t1+t2))
+kol_krol = int(input('Сколько сегодня в зоопарке кроликов?'))
+kol_slon=3; norma_krol=2; norma_slon=100;
+vsego=kol_krol*norma_krol+kol_slon*norma_slon
+print('Всего вам понадобится',str(vsego),'морковок')
+side_1 = int(input('Длина первой стороны:'))
+side_2 = int(input('Длина второй стороны:'))
+side_3 = 5
+print('Периметр треугольника при этом равен:', side_1+side_2+side_3)
+S = int(input('Некоторое тело проделало путь:'))
+V = int(input('При этом его скорость составляла:'))
+print('На это потребовалось времени:', int(S/V))
+
+count = 0
+distance = 10000
+first_f_s = 1
+second_f_s = 2
+dog_s = 5
+friend = True
+while distance > 1:
+    if friend is True:
+        time = distance/(second_f_s+dog_s)
+    else:
+        time = distance/(first_f_s+dog_s)
+    distance = distance - time*(first_f_s+second_f_s)
+    count += 1
+    if friend is True:
+        friend = False
+    else:
+        friend = True
+print(count)        
