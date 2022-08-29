@@ -2,6 +2,15 @@
 
 Для создания удаленного репозитория необходимо иметь учетную запись на ресурсе, предоставляющем подобные возможности. Мы воспользуемся **[GitHub](https://github.com/)**.
 
+## Добавление на GitHub существующего локально репозитория:
+1.  * **git remote add \<origin> <url_of_remote_repo>** либо
+    * **git remote set-url \<origin> <url_of_remote_repo>** задает адрес связуемого ресурса.
+2. **git branch -M \<main>** задает название коренной ветви.
+3. **git push -u origin main** отправляет данные в удаленный репозиторий.
+
+
+## Для того, чтобы подключиться к совместной работе над существующим проектом: 
+
 1. Скопировать (fork) нужный репозиторий в свой аккаунт Github.
 2. **git clone <url_of_remote_repo>**.
 3. **git checkout -b <branch_to_offer>**.
@@ -10,11 +19,3 @@
 6. Инициировать pull request на Github.
 
 **NB!** Если возникают проблемы - внимательно читать строку терминала и вообще внимательно читать!
-
-не забыть добавить инструкцию по добавлению на GitHub существующего локально репозитория. …or push an existing repository from the command line
-git remote add origin https://github.com/KSolo0203/Push_pull.git
-git remote set-url origin https://github.com/KSolo0203/Push_pull.git
-git branch -M main
-git push -u origin main
-
-Пулл реквест по адресу https://github.com/GiliazovaPullrequests/VersionControl_Seminar3
